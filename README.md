@@ -18,33 +18,33 @@ class Node {
 
 ## Using the list
 ```javascript
-const node = new LinkedList();
+const list = new LinkedList();
 
-node.append(10) // ( 10 ) -> null
-node.append(20) // ( 10 ) -> ( 20 ) -> null
-node.append(30) // ( 10 ) -> ( 20 ) -> ( 30 ) -> null
+list.append(10) // ( 10 ) -> null
+list.append(20) // ( 10 ) -> ( 20 ) -> null
+list.append(30) // ( 10 ) -> ( 20 ) -> ( 30 ) -> null
 
-node.toString() // ( 10 ) -> ( 20 ) -> ( 30 ) -> null
+list.toString() // ( 10 ) -> ( 20 ) -> ( 30 ) -> null
 
-node.prepend(40) // ( 40 ) -> ( 10 ) -> ( 20 ) -> ( 30 ) -> null
-node.prepend(50) // ( 50 ) -> ( 40 ) -> ( 10 ) -> ( 20 ) -> ( 30 ) -> null
+list.prepend(40) // ( 40 ) -> ( 10 ) -> ( 20 ) -> ( 30 ) -> null
+list.prepend(50) // ( 50 ) -> ( 40 ) -> ( 10 ) -> ( 20 ) -> ( 30 ) -> null
 
-node.head // Node { value: 50, nextNode: [Node] }
-node.tail // Node { value: 30, nextNode: null }
-node.size() // 5
+list.head // Node { value: 50, nextNode: [Node] }
+list.tail // Node { value: 30, nextNode: null }
+list.size() // 5
 
-node.pop() // ( 50 ) -> ( 40 ) -> ( 10 ) -> ( 20 ) -> null
+list.pop() // ( 50 ) -> ( 40 ) -> ( 10 ) -> ( 20 ) -> null
 
-node.at(2) // Node { value: 40, nextNode: [Node] }
+list.at(2) // Node { value: 40, nextNode: [Node] }
 
-node.contains(20) // true
-node.contains(70) // false
+list.contains(20) // true
+list.contains(70) // false
 
-node.find(10) // 3 (index)
+list.find(10) // 3 (index)
 
-node.instertAt(100000, 3)
+list.instertAt(100000, 3)
 // ( 50 ) -> ( 40 ) -> ( 100000 ) -> ( 10 ) -> ( 20 ) -> null
 
-node.removeAt(4) 
+list.removeAt(4) 
 // ( 50 ) -> ( 40 ) -> ( 100000 ) -> ( 20 ) -> null
 ```
